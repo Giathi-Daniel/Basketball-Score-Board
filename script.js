@@ -1,4 +1,3 @@
-// index.js
 let timer;
 let seconds = 720;
 let isTimerRunning = false;
