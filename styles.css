@@ -103,7 +103,8 @@ body {
     margin: 0.5rem 0;
 }
 
-.timer-controls button, .period-controls button {
+.timer-controls button,
+.period-controls button {
     background: #444;
     color: white;
     border: none;
@@ -113,3 +114,19 @@ body {
     cursor: pointer;
 }
 
+/* ==== AI ASSISSTANT ==== */
+.voice-toggle {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-block-end: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-block-start: 2rem;
+}
+
+.voice-toggle.active {
+    background: #dc3545;
+}
