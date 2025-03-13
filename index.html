@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Basketball Score Board </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="scoreboard">
+            <button class="new-game" onclick="newGame()">NEW GAME</button>
+            
+            <div class="container">
+                <div class="team home">
+                    <h3>HOME</h3>
+                    <div class="score" id="home-score">0</div>
+                    <div class="buttons">
+                        <button class="points" onclick="addPoints('home', 1)">+1</button>
+                        <button class="points" onclick="addPoints('home', 2)">+2</button>
+                        <button class="points" onclick="addPoints('home', 3)">+3</button>
+                    </div>
+                </div>
+                
+                <div class="timer-container">
+                    <div class="period">
+                        <h4>PERIOD</h4>
+                        <div class="period-number" id="period">1</div>
+                        <div class="period-controls">
+                            <button onclick="changePeriod(-1)">-</button>
+                            <button onclick="changePeriod(1)">+</button>
+                        </div>
+                    </div>
+                    <div class="timer" id="timer">
+                        12:00
+                        <div class="timer-controls">
+                            <button onclick="startTimer()">▶</button>
+                            <button onclick="stopTimer()">⏸</button>
+                            <button onclick="resetTimer()">↺</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team guest">
+                    <h3>GUEST</h3>
+                    <div class="score" id="guest-score">0</div>
+                    <div class="buttons">
+                        <button class="points" onclick="addPoints('guest', 1)">+1</button>
+                        <button class="points" onclick="addPoints('guest', 2)">+2</button>
+                        <button class="points" onclick="addPoints('guest', 3)">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
